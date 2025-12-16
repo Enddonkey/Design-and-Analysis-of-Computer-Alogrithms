@@ -2,12 +2,6 @@
 using namespace std;
 const int N=25e2+10;
 const int M=2e5;
-struct node{
-	int num,dis;
-	bool operator <(const node &x) const {
-		return x.dis<dis;
-	} 
-};
 int n,m,s,t;
 int head[N],ver[M],Next[M],edge[M];
 int dis[N],v[N],tot;
